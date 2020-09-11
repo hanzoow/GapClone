@@ -17,7 +17,7 @@ const RootTabStack = createStackNavigator();
 const index = (): JSX.Element => {
     const [user, setUser] = useState(null);
 
-    function onAuthStateChanged(result:any) {
+    function onAuthStateChanged(result: any) {
         setUser(result);
     }
     useEffect(() => {
@@ -32,15 +32,16 @@ const index = (): JSX.Element => {
                 headerShown: false,
                 gestureEnabled: false
             }}
-        >      
-            <RootTabStack.Screen
+        >
+            {user && <RootTabStack.Screen
+                name='HomeTab'
+                component={HomeTab}
+            />}
+            {!user && < RootTabStack.Screen
                 name='AuthStack'
                 component={AuthStack}
-            />
-            <RootTabStack.Screen
-                name='HomTab'
-                component={HomeTab}
-            />
+            />}
+
         </RootTabStack.Navigator>
     )
 }

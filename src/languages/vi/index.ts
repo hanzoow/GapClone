@@ -1,4 +1,8 @@
 export const vi = {
+    // commons words
+    and: 'and',
+    next: 'Next',
+    force:'*',
     //Landing screen
     button_login: 'Login with email',
     or_connect: 'or continue with',
@@ -11,4 +15,37 @@ export const vi = {
     email_place_holder: 'Email address',
     password_place_holder: 'Password',
     forgot_password: 'Forgot Password?',
+
+    //Sign up screen
+    already_registered_question: 'Already registered?',
+    register_title: 'Register',
+    first_name_placeholder: 'First name',
+    last_name_placeholder: 'Last name',
+    guide_text: `By click 'Next', i agree to Gapmash's
+    Terms and Conditions and Privacy Policy`,
+    add_profile_pic: 'Add a profile pic',
+    default_pic_statement: `Your initials will be used if you don't upload your own photo`,
+    skip_and_do_later: 'Skip and do later',
+    tell_us_more: 'Tell us more',
+    university_title: 'What is your University',
+    university_placeholder: 'Select a university',
+    university_question_to_add: `Don't see your university? Click here to add`,
+    campus_title: 'Your campus',
+    campus_placeholder: 'Select a campus',
+    campus_question_to_add: `Don't see your campus? Click here to add`,
+    faculty: 'Your faculty',
+    faculty_placeholder:'Select a faculty',
+    faculty_question_to_add: `Don't see your faculty? Click here to add`,
+    interested_in_question: 'What are you interested in?',
+    interested_in_placeholder: 'Add an interest',
+    add_title_university: 'Add a university manually',
+    add_university_description: `Couldn't find your university? Don't worry, you can manually add one below`,
+    add_university_abbreviation_placeholder: 'Enter university abbreviation ie USYD',
+    add_university_name_of_university_placeholder: 'Enter name of University',
+    add_title_campus: 'Add a campus manually',
+    add_campus_description: `Couldn't find your campus? Don't worry, you can manually add one below`,
+    add_campus_name_of_university_placeholder: 'Enter name of campus',
+    add_title_faculty: 'Add a campus manually',
+    add_faculty_description: `Couldn't find your campus? Don't worry, you can manually add one below`,
+    add_faculty_name_of_university_placeholder: 'Enter name of campus',
 }

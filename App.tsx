@@ -16,9 +16,13 @@ import {
   StatusBar,
 } from 'react-native';
 import RootNavigator from './src/navigations';
+import { Provider } from 'react-redux';
+import store from './src/store';
 const App = () => {
   return (
-    <RootNavigator/>
+    <Provider store={store}>
+      <RootNavigator />
+    </Provider>
   );
 };
 

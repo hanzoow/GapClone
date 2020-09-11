@@ -86,7 +86,7 @@ const HomeTab = () => {
 
     };
     return (
-        <Tab.Navigator>
+        <Tab.Navigator initialRouteName={'HomeIndex'}>
             <Tab.Screen
                 options={{
                     tabBarIcon: ({ focused }) => <Icon name="home"

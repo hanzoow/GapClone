@@ -8,7 +8,7 @@ const SplashScreen = (): JSX.Element => {
     useEffect(() => {
         setTimeout(() => {
             replace('RootTab',{})
-        },5000)
+        },1000)
     },[])
 
     return (
